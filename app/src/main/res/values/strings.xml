@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Carniceria_TFG</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="DescripcionTienda">Carnicería Macarro es el lugar ideal para encontrar los cortes de carne más frescos y de la mejor calidad. Nuestro equipo de expertos carniceros selecciona cuidadosamente cada pieza, asegurando que cumpla con nuestros altos estándares. Ya sea que busques filetes jugosos, tiernos cortes de cerdo o deliciosas opciones de pollo, en Carnicería Macarro encontrarás una amplia variedad para satisfacer tus necesidades culinarias. Además, nuestro amable personal está siempre dispuesto a brindarte recomendaciones y consejos para que disfrutes al máximo tus comidas. Ven y descubre la diferencia en Carnicería Macarro, donde la calidad y el sabor van de la mano.</string>
+    <string name="Borrar">Borrar articulo</string>
+    <string name="Actualizar">Actualizar articulo\n</string>
+    <string name="refrescar">Refrescar</string>
+</resources>

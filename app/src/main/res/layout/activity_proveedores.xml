@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activityes.ProveedoresActivity">
+
+    <TextView
+        android:id="@+id/semana_elaboracion"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginStart="10dp"
+        android:text="Proveedores"
+        android:textSize="34sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_proveedores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/recycler_view_proveedores" />
+</LinearLayout>
