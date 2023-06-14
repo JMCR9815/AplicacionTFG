@@ -44,6 +44,9 @@ public interface ApiService {
     Call<Productos> addProductos(@Body Productos producto);
 
     @POST("/proveedores/addProveedor")
-    Call<Proveedor>addProveedor(@Body Proveedor proveedor);
+    Call<Proveedor> addProveedor(@Body Proveedor proveedor);
+
+    @DELETE("/proveedores/deleteProveedor/{id}")
+    Call<Void> deleteProveedor(@Path("id") int id);
 
 }

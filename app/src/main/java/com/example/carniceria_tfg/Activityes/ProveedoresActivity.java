@@ -15,12 +15,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.carniceria_tfg.Adaptadores.Proveedores.MyAdapter;
 import com.example.carniceria_tfg.Adaptadores.Proveedores.OnItemClickListener;
-import com.example.carniceria_tfg.Formularios.FormularioElaboraciones;
+import com.example.carniceria_tfg.Formularios.Formulario_Proveedores;
 import com.example.carniceria_tfg.Model.Proveedor;
 import com.example.carniceria_tfg.R;
 import com.example.carniceria_tfg.Utils.Api;
 import com.example.carniceria_tfg.Utils.ApiService;
-import com.example.carniceria_tfg.Utils.Delete_Dialog_elaboraciones;
+import com.example.carniceria_tfg.Utils.Delete_Dialog_Proveedores;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,7 +80,7 @@ public class ProveedoresActivity extends AppCompatActivity implements OnItemClic
                 break;
             case R.id.update:
                 Toast.makeText(this, "Actualizar", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this, FormularioElaboraciones.class);
+                Intent intent = new Intent(this, Formulario_Proveedores.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 break;
@@ -94,7 +94,7 @@ public class ProveedoresActivity extends AppCompatActivity implements OnItemClic
     }
 
     public void openDialog() {
-        Delete_Dialog_elaboraciones deleteDialog = new Delete_Dialog_elaboraciones();
+        Delete_Dialog_Proveedores deleteDialog = new Delete_Dialog_Proveedores();
 
         deleteDialog.show(getSupportFragmentManager(), "Delete Elaboration Dialog");
 
