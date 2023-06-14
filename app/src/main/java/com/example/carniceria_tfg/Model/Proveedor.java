@@ -1,12 +1,26 @@
 package com.example.carniceria_tfg.Model;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Proveedor {
+    @SerializedName("proveedor_id")
+    @Expose
     private int proveedor_id;
+    @SerializedName("name")
+    @Expose
     private String name;
+    @SerializedName("numero_telefono")
+    @Expose
     private String numero_telefono;
 
     public Proveedor(int proveedor_id, String name, String numero_telefono) {
         this.proveedor_id = proveedor_id;
+        this.name = name;
+        this.numero_telefono = numero_telefono;
+    }
+
+    public Proveedor(String name, String numero_telefono) {
         this.name = name;
         this.numero_telefono = numero_telefono;
     }

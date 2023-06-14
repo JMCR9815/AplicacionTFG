@@ -42,4 +42,8 @@ public interface ApiService {
 
     @POST("/productos/addProduct")
     Call<Productos> addProductos(@Body Productos producto);
+
+    @POST("/proveedores/addProveedor")
+    Call<Proveedor>addProveedor(@Body Proveedor proveedor);
+
 }
